@@ -25,11 +25,10 @@ void setup()
 void loop()
 {
     Serial.println(front.getDistance());
-    if (front.getDistance() < 100)
+    int distance = front.getDistance();
+    if (distance < 100 && distance > 0)
     {
-      if(front.getDistance() > 0){
-          car.setSpeed(0);
-       }
+        car.setSpeed(0);
     }
     delay(100);
     handleInput();

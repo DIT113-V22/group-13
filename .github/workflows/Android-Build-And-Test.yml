@@ -48,7 +48,7 @@ jobs:
       - name: Run instrumented tests for CarControl UI
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          profile: Nexus 6
+          profile: Pixel 2
           api-level: 29
           arch: x86_64
           working-directory: ./CarControl
